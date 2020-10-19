@@ -1,4 +1,5 @@
 class FoodsController < ApplicationController
-  def index
+	def index
+		@foods = FoodFacade.search(params["q"])
   end
 end
