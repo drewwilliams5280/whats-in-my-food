@@ -1,6 +1,6 @@
 class FoodService
 	def self.search(search_term)
-		to_json('/fdc/v1/foods/search', { query: search_term})
+		to_json('/fdc/v1/foods/search', { query: search_term, pageSize: '10', pageNumber: '1'} ) 
 	end
 
 	def self.to_json(url, params = {})

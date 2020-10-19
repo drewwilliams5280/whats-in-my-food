@@ -1,10 +1,9 @@
-<h3>Total results: <%= @foods.count %></h3>
+<h3>Results: <%= @foods.count %></h3>
 <% @foods.each do |food| %>
-	<h2><%= food.name %></h2>
-	<p><%= food.description %></p>
-	<p><%= park.brand %></p>
-	<p>Ingredients:</p>
-	<% food.ingredients.each do |ingredient| %>
-		<p><%= ingredient %></p>
-	<% end %>
+	<section class="food">
+		<h2 class="description"><%= food.description %></h2>
+		<p class="brand"><%= food.brand %></p>
+		<p class="ingredients">Ingredients: <%= food.ingredients %></p>
+		<p class="code"><%= food.code %></p>
+	</section>
 <% end %>
