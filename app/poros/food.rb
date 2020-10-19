@@ -5,5 +5,5 @@ class Food
 		@code = food_info[:gtinUpc]
 		@brand = food_info[:brandOwner]
 		@ingredients = food_info[:ingredients]
-	end
+	end 
 end
